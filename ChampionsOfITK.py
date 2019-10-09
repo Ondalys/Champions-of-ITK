@@ -1,1 +1,1 @@
-print("Hail Rickard");
+print("Hail stan");
