@@ -10,4 +10,8 @@ should provide everything from events to conversations from
 NPCs and that is where this project comes in, the main purpose
 is to make this a dynamic adventure database management system.
 
-The rules for Champions of ITK are also provided  
+The rules for Champions of ITK are also provided
+
+Dependencies for the Python client:
+
+Kivy (and all of kivy's dependencies)
