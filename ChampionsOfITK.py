@@ -3,32 +3,25 @@ from kivy.base import Builder
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
-from kivy.uix.gridlayout import GridLayout
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.image import Image
 
-Builder.load_string("""
-<rootwi>:
-    orientation:'vertical'
+Builder.load_file('ChampionsOfITK.kv')
 
-        """)
+class MainScreen(FloatLayout):
+    pass
+    #def __init__(self, **kwargs):
 
-class StartScreen(GridLayout):
+    #def do_start(self):
+        #self.remove_widget(StartScreen)
+        #self.add_widget(GameScreen)
 
-    def __init__(self, **kwargs):
-        super(StartScreen, self).__init__(**kwargs)
-        self.cols = 1
-        #self.image = Image(source="FantasyImage.jpg")
-        self.createButton = Button(text="Create Character")
-        self.loadButton = Button(text="Load Character")
-        self.startButton = Button(text="Start playing")
-        #self.add_widget(self.image)
-        self.add_widget(self.createButton)
-        self.add_widget(self.loadButton)
-        self.add_widget(self.startButton)
+class StartScreen(FloatLayout):
+    pass
 
 class ChampionsOfITK(App):
 
     def build(self):
-        return StartScreen()
+        return MainScreen()
 
 ChampionsOfITK().run()
