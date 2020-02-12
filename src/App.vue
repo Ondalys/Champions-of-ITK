@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="ITK logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Champions of ITK"/>
+    <Welcome msg="Welcome to Champions of ITK"/>
+    <MainMenu startBtn="Start playing"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Welcome from './components/HelloWorld.vue'
+import MainMenu from './components/MainMenu.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Welcome,
+    MainMenu
   }
 }
 </script>
@@ -24,5 +27,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  font-size: 50px;
 }
 </style>
