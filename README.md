@@ -10,4 +10,15 @@ should provide everything from events to conversations from
 NPCs and that is where this project comes in, the main purpose
 is to make this a dynamic adventure database management system.
 
-The rules for Champions of ITK are also provided  
+The rules for Champions of ITK are also provided
+
+To dockerize the webapp use the command:
+
+ docker-compose up -d --build
+
+for development and
+
+ docker build -f Dockerfile-prod -t my-app:prod .
+ docker run -it -p 80:80 --rm my-app:prod
+
+for the production build
