@@ -11,6 +11,9 @@ export default {
     methods: {
         roll: function (table) {
             // this function should roll on given table
+            if(table == "wat"){
+                alert("hello");
+            }
         }
     }
 }
