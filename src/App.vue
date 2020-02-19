@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <img alt="ITK logo" src="./assets/logo.png">
-    <Welcome msg="Welcome to Champions of ITK"/>
+    <Header msg="Welcome to Champions of ITK"/>
     <MainMenu startBtn="Start playing"/>
   </div>
 </template>
 
 <script>
-import Welcome from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 import MainMenu from './components/MainMenu.vue'
 
 export default {
   name: 'app',
   components: {
-    Welcome,
+    Header,
     MainMenu
   }
 }

@@ -1,24 +1,20 @@
 <template>
   <div class="hello">
-      <button>{{ startBtn }}</button>
+      <Button btnText="Start Playing"/>
   </div>
 </template>
 
 <script>
+
+import Button from './Button.vue'
+
 export default {
   name: 'MainMenu',
-  props: {
-    startBtn: String
+  components: {
+      Button
   }
 }
 </script>
 
 <style scoped>
-button {
-    color: gold;
-    background-color: gray;
-    border-radius: 1em;
-    font-size: 2em;
-    border: .3em solid gray;
-}
 </style>
