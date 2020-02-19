@@ -8,6 +8,11 @@ export default {
     props: {
         btnText: String
     }
+    methods: {
+        roll: function (table) {
+            // this function should roll on given table
+        }
+    }
 }
 </script>
 
