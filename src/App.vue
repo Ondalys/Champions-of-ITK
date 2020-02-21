@@ -13,12 +13,20 @@ import MainMenu from './components/MainMenu.vue'
 import EventText from './components/EventText.vue'
 
 export default {
-  name: 'app',
-  components: {
-    Header,
-    EventText,
-    MainMenu
-  }
+    name: 'app',
+    components: {
+        Header,
+        EventText,
+        MainMenu
+    },
+    methods: {
+        startGame: function(){
+            // this is when the startbtn is clicked
+        },
+        roll: function(){
+            // this function is for rolling on a table
+        }
+    }
 }
 </script>
 
