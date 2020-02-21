@@ -14,6 +14,9 @@ export default {
             if(table == "wat"){
                 alert("hello");
             }
+        },
+        start: function () {
+            //This function should start the game, randomize between all the tables and choose one option as starting point
         }
     }
 }
