@@ -7,17 +7,6 @@ export default {
     name: 'Button',
     props: {
         btnText: String
-    },
-    methods: {
-        roll: function (table) {
-            // this function should roll on given table
-            if(table == "wat"){
-                alert("hello");
-            }
-        },
-        start: function () {
-            //This function should start the game, randomize between all the tables and choose one option as starting point
-        }
     }
 }
 </script>
