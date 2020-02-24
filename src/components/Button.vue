@@ -7,6 +7,11 @@ export default {
     name: 'Button',
     props: {
         btnText: String
+    },
+    methods: {
+        setText: function(text) {
+            btnText = text;
+        }
     }
 }
 </script>

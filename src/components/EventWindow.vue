@@ -1,6 +1,7 @@
 <template>
     <div class="main-event">
         <p> {{ eventText }} </p>
+        <OptionMenu/>
     </div>
 </template>
 
@@ -8,7 +9,7 @@
 import OptionMenu from './OptionMenu.vue'
 
 export default {
-    name: 'EventText',
+    name: 'EventWindow',
     props: {
         eventText: String
     },
