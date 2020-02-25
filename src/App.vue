@@ -3,7 +3,7 @@
     <img alt="ITK logo" src="./assets/logo.png">
     <Header msg="Welcome to Champions of ITK"/>
     <EventWindow eventText=""/>
-    <MainMenu startBtn="Start playing"/>
+    <MainMenu startBtnText="Play Game"/>
   </div>
 </template>
 

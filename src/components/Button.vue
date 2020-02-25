@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         setText: function(text) {
-            btnText = text;
+            this.btnText = text;
         }
     }
 }

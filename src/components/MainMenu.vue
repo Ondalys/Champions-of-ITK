@@ -1,7 +1,7 @@
 <template>
-    <div class="hello">
-        <Button btnText="Start Playing"/>
-     </div>
+    <div class="menu">
+        <Button :btnText="startBtnText"></Button>
+    </div>
 </template>
 
 <script>
@@ -10,6 +10,9 @@ import Button from './Button.vue'
 
 export default {
     name: 'MainMenu',
+    props: {
+        startBtnText: String
+    },
     components: {
         Button
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="main-event">
+    <div class="main-event" v-if="visibility === true">
         <p> {{ eventText }} </p>
         <OptionMenu/>
     </div>
@@ -11,7 +11,8 @@ import OptionMenu from './OptionMenu.vue'
 export default {
     name: 'EventWindow',
     props: {
-        eventText: String
+        eventText: String,
+        visibility: Boolean
     },
     components: {
         OptionMenu
