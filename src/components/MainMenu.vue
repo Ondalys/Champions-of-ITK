@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <Button :btnText="startBtnText"></Button>
+        <Button btnText="Start Game" @click="$emit('startGame')"/>
     </div>
 </template>
 
@@ -11,7 +11,6 @@ import Button from './Button.vue'
 export default {
     name: 'MainMenu',
     props: {
-        startBtnText: String
     },
     components: {
         Button

@@ -2,8 +2,8 @@
   <div id="app">
     <img alt="ITK logo" src="./assets/logo.png">
     <Header msg="Welcome to Champions of ITK"/>
-    <EventWindow eventText=""/>
-    <MainMenu startBtnText="Play Game"/>
+        <MainMenu @startGame="startGame"/>
+    <EventWindow eventText="You and your friends find a mysterious potion, the liquid is light green and slightly glowing, what do you do?" v-bind:visibility="eventVisibility"/>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ import EventWindow from './components/EventWindow.vue'
 
 export default {
     name: 'app',
+    data(){
+        return {
+            eventVisibility: false
+        }
+    },
     components: {
         Header,
         EventWindow,
@@ -21,10 +26,7 @@ export default {
     },
     methods: {
         startGame: function(){
-            // this is when the startbtn is clicked
-        },
-        roll: function(){
-            // this function is for rolling on a table
+            this.eventVisibility = true;
         }
     }
 }
