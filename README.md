@@ -16,7 +16,7 @@ How to dockerize the webapp bellow.
 
 for development:
 
-without docker:
+without docker:\n
 npm run serve
 
 with docker:
