@@ -15,6 +15,11 @@ The rules for Champions of ITK are also provided
 How to dockerize the webapp bellow.
 
 for development:
+
+without docker:
+npm run serve
+
+with docker:
 docker-compose up -d --build
 
 for the production:
