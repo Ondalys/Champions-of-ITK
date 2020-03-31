@@ -14,7 +14,9 @@ The rules for Champions of ITK are also provided
 
 To dockerize the webapp use the command:
 
- docker-compose up -d --build
+without docker: npm run serve
+
+with docker: docker-compose up -d --build
 
 for development and
 
