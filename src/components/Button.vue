@@ -1,5 +1,5 @@
 <template>
-    <button @click="$emit('click')">{{ btnText }}</button>
+    <v-btn class="buttoni" x-large @click="$emit('click')">{{ btnText }}</v-btn>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-button {
+.button {
     color: gold;
     background-color: gray;
     border-radius: 1em;

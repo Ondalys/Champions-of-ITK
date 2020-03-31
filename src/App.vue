@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    <img alt="ITK logo" src="./assets/logo.png">
-    <Header msg="Welcome to Champions of ITK"/>
-        <MainMenu @startGame="startGame"/>
+    <MainMenu @startGame="startGame"/>
     <EventWindow eventText="You and your friends find a mysterious potion, the liquid is light green and slightly glowing, what do you do?" v-bind:visibility="eventVisibility"/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
 import MainMenu from './components/MainMenu.vue'
 import EventWindow from './components/EventWindow.vue'
 
@@ -20,7 +17,6 @@ export default {
         }
     },
     components: {
-        Header,
         EventWindow,
         MainMenu
     },

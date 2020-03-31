@@ -1,11 +1,14 @@
 <template>
-    <div class="menu">
+    <v-app-bar class="menu">
+        <img alt="ITK logo" src="../assets/logo.png">
         <Button btnText="Start Game" @click="$emit('startGame')"/>
-    </div>
+        <Header msg="Welcome to Champions of ITK"/>
+    </v-app-bar>
 </template>
 
 <script>
 
+import Header from './Header.vue'
 import Button from './Button.vue'
 
 export default {
@@ -13,6 +16,7 @@ export default {
     props: {
     },
     components: {
+        Header,
         Button
     }
 }
