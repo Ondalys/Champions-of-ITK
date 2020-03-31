@@ -1,12 +1,17 @@
 <style scoped>
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .button-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .button-container > a,
 button {
+    width: 50%;
+    align-self: center;
     margin: 10px 0px;
 }
 </style>
@@ -14,8 +19,10 @@ button {
     <div class="container">
         <div>Your adventure starts here!</div>
         <div class="button-container">
-            <v-btn to="decision">Start new adventure</v-btn>
-            <v-btn disabled>Load game</v-btn>
+            <v-btn dark large color="#8e24aa" to="decision"
+                >Start new adventure</v-btn
+            >
+            <v-btn large disabled>Load game</v-btn>
         </div>
     </div>
 </template>
