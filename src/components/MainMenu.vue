@@ -1,9 +1,10 @@
 <template>
-    <v-app-bar class="menu">
+    <div>
         <img alt="ITK logo" src="../assets/logo.png">
-        <v-btn @click="$emit('startGame')" to="select">Start Game</v-btn>
         <Header msg="Welcome to Champions of ITK"/>
-    </v-app-bar>
+        <v-btn to="select" color="#aa1">Start Game</v-btn>
+        <v-btn @click="$emit('rulesToggle')" color="#aa1">Rules</v-btn>
+    </div>
 </template>
 
 <script>
@@ -21,4 +22,7 @@ export default {
 </script>
 
 <style scoped>
+div {
+    background-color: #9ecfff;
+}
 </style>
