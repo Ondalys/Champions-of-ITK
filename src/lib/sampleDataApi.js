@@ -1,24 +1,26 @@
-import sampleData from "./sampleData.js";
+import sampleData from './sampleData.js';
 
 const { decisionTable, outcomeTable } = sampleData;
 
 const getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
 
 /* This function returns the starting decsions */
-const initialize = () =>
-  decisionTable.find(entry => entry.name === "start").decisions;
+const initialize = () => ({
+    decisions: decisionTable.find(entry => entry.name === 'start').decisions,
+    outcome: 'You find yourself on a plot of grass'
+});
 
 /* From a decsion get a random outcome as well as a set of new decisions */
 const getNext = decision => {
-  const { outcomes } = outcomeTable.find(
-    entry => entry.name === decision.targetName
-  );
+    const { outcomes } = outcomeTable.find(
+        entry => entry.name === decision.targetName
+    );
 
-  const outcome = outcomes[getRandomInt(outcomes.length)];
-  const { decisions } = decisionTable.find(
-    entry => entry.name === outcome.targetName
-  );
-  return { outcome: outcome.description, decisions };
+    const outcome = outcomes[getRandomInt(outcomes.length)];
+    const { decisions } = decisionTable.find(
+        entry => entry.name === outcome.targetName
+    );
+    return { outcome: outcome.description, decisions };
 };
 
 export { initialize, getNext };
