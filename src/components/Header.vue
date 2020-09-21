@@ -18,5 +18,6 @@ export default {
 h1 {
     color: gold;
     font-family: serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 </style>
