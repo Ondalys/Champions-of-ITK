@@ -1,7 +1,8 @@
 <template>
     <div>
         <v-sheet color="#595">
-            News: Webapp in development
+            News:
+            2020-09-23 - Backend development started
         </v-sheet>
     </div>
 </template>
