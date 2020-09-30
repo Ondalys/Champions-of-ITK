@@ -20,6 +20,11 @@ export default new Router({
             path: '/decision',
             name: 'decision',
             component: () => import('./views/Decision.vue')
+        },
+        {
+            path: '/create-entry',
+            name: 'create-entry',
+            component: () => import('./views/CreateEntry.vue')
         }
     ]
 });

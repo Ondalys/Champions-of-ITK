@@ -46,7 +46,7 @@ export default {
             outcomes: [
                 {
                     targetName: 'death',
-                    description: 'A rock fell on you and you'
+                    description: 'A rock fell on you and you DIE!!!'
                 },
                 {
                     targetName: 'goblinEncounter',
