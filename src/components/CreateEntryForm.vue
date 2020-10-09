@@ -5,6 +5,7 @@
             <input id="entryDescription" type="textarea"/>
         </div>
         <div>
+            <v-btn color="#0f0">Submit</v-btn>
             <v-btn to="select" color="#aa1">Cancel</v-btn>
         </div>
     </div>

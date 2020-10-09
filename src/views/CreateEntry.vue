@@ -1,6 +1,6 @@
 <template>
     <div>
-        <CreateEntryForm tableTags="tableTag"/>
+        <CreateEntryForm tableTags="tableTags"/>
     </div>
 </template>
 
